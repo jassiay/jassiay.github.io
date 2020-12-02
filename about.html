@@ -10,7 +10,7 @@
 
 
 <body>
-    <div class="navbar">
+    <div class="navbar" role="navigation" aria-label="navigation bar">
         <a class="navbar-brand navbar-item" href="./index.html">JING JIANG</a>
         <ul class="navbar-links">
             <a href="./work.html"><li class="navbar-item">Work</li></a>
@@ -18,13 +18,14 @@
             <a href="./assets/Resume Jing Jiang.pdf" target="_blank"><li class="navbar-item">Resume</li></a>
         </ul>
     </div>
-    <div class="about-bio">
+
+    <div class="about-bio" role="article" aria-label="Jing's bio">
         <h1>About Me</h1>
         <div class="about-intro">
             <p>
                 Hello!
             </p>
-            <img src="./assets/about-1.JPG" alt="Jing's portrait photo" class="about-portrait" />
+            <img src="./assets/about-1.JPG" alt="Jing's portrait photo" class="about-portrait" role="img" aria-label="Jing's portrait" />
             <p>
                 I’m currently living in Evanston, IL and studying as a Master's student in Computer Science at Northwestern University. 
             </p>
@@ -44,13 +45,12 @@
                 <u><b><a href="https://github.com/jassiay" target="_blank">Github</a></b></u>
                 for my past experience and projects!
             </p>
-
         </div>
 
 
     </div>
 
-    <div class="about-contact">
+    <div class="about-contact" aria-label="Contact Info" >
         <h1>Contact</h1>
         <div class="about-intro">    
             <h4>If interested, you can:</h4>
@@ -62,25 +62,25 @@
         </div>
 
         <div class="container">  
-            <form id="contact" action="" method="post">
+            <form id="contact" action="" method="post" aria-label="Contact Form" role="form">
                 <h4>Contact Form</h4>
                 <fieldset>
-                    <input placeholder="Your Name" type="text" tabindex="1" required autofocus>
+                    <input placeholder="Your Name" type="text" tabindex="1" required autofocus aria-label="Name">
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required aria-label="Email">
                 </fieldset>
                 <fieldset>
-                    <textarea placeholder="Your Message Here." tabindex="5" required></textarea>
+                    <textarea placeholder="Your Message Here." tabindex="5" required aria-label="Message"></textarea>
                 </fieldset>
                 <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" aria-label="Submit button">Submit</button>
                 </fieldset>
             </form>
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Jing Jiang 2020
     </div>
 
