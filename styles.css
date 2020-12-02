@@ -16,6 +16,10 @@ a:active {
     color: coral;
 }
 
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
 
 /* Nav */
 .navbar {
@@ -36,7 +40,7 @@ a:active {
     display: inline;
     margin-left: 20px;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 80px;
 }
 
@@ -73,7 +77,7 @@ a:active {
 }
 
 .divider-orange {
-    margin-top: 310px;
+    margin-top: 330px;
     font-size: 2em;
 }
 
@@ -225,14 +229,6 @@ a:active {
 }
 
 /* Contact Form */
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea,
-#contact button[type="submit"] {
-    font-weight: 400;
-    font-family: Arial, sans-serif;
-}
 
 #contact {
     background: #F9F9F9;
