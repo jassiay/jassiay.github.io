@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <title>Jing Jiang</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="navbar-brand navbar-item" href="./index.html">JING JIANG</a>
+        <ul class="navbar-links">
+            <a href="./work.html"><li class="navbar-item navbar-active">Work</li></a>
+            <a href="./about.html"><li class="navbar-item">About</li></a>
+            <a href="./assets/Resume Jing Jiang.pdf" target="_blank"><li class="navbar-item">Resume</li></a>
+        </ul>
+    </div>
+
+
+    <div class="work-thumbnail">
+        <h1 class="work-name">Recreate-Manhattan</h1>
+        <h3 class="work-brief">Reimagine a City using Deep Learning</h3>
+        <h3 class="work-brief"><a href="https://recreate-manhattan.jiangjing.io/" target="_blank">recreate-manhattan.jiangjing.io</a></h3>
+    </div>
+
+    <div>
+        <div class="work-container">
+            <h1>Dataset Description</h1>
+            <p>
+                Our dataset consists of 3 groups, each has 400 images. Each image contains information of the top-view footprint of a block in Manhattan. 
+                Group 1 is the footprint with building inlines. 
+                Group 2 is the footprint with block outline only. 
+                Group 3 is the greyscale depth maps of the block. The greyscale denotes the height of the buildings. The lighter the color is, the taller the building will be.
+            </p>
+            <div class="img-center">
+                <img src="./assets/project-1-dataset.png" alt="Project Dataset" class="work-img" />
+            </div>
+        </div>
+    </div>
+    <div class="gray-background">
+        <div class="work-container">
+            <h1>Deep Learning Model</h1>
+            <p>
+                We chose Pix2Pix as our Deep Learning model. Pix2Pix has a conditional General Adversarial Networks architecture that enables image-to-image translation. 
+                We trained two mappings using our dataset. The first one is buidling-footprint-to-depth model, which translates the footprints with building inlines to depth maps. 
+                The second one is block-footprint-to-depth model, which translates the block-outline-only footprints to depth maps. We trained each model for 100 epochs.
+            </p>
+            <div class="img-center">
+                <img src="./assets/project-1-model-description.png" alt="Pix2Pix Model Description" class="work-img" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="work-container">
+            <h1>Results</h1>
+            <p>
+                We drew 151 block-like images as our input, and order them to create a footprint for a city, as shown at the left side of the second row. 
+                After the model infered their depth maps, we ordered them in the same way. 
+                Thus, a depth map for a city was created, as shown at the right side of the second row. From that, we rendered our New Manhattan.
+            </p>
+            <div class="img-center">
+                <img src="./assets/project-1-results.png" alt="Project Results" class="work-img" />
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; Jing Jiang 2020
+    </div>
+
+</body>    
+</html>
